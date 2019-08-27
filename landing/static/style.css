@@ -1,0 +1,148 @@
+body{
+    margin: 0%;
+    display: grid;
+    grid-template-areas:'header header'
+                        'navbar navbar'
+                        'section aside'
+                        'oi oi'
+                        'footer footer';
+    grid-template-rows: 90vh 55vh 60vh 30vh 40vh;
+}
+
+header{
+    grid-area: header;
+    background-image: "{% static 'images/banner.jpg' %}";
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+.icon-android{
+    background-color: green;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.icon-ios{
+    background-color: green;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-windows{
+    background-color: green;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#icon-3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.botão{
+    background-color: green;
+    border-radius: 100%; 
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    height: 40%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.imagem{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    align-items: flex-end;
+}
+
+.texto {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div{
+    display:block;
+
+}
+
+nav{
+    grid-area: navbar;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav img{
+    background-color:rgb(95, 205, 112);
+    border-radius: 100%;
+
+}
+
+.icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.icon {
+    background-color:rgb(95, 205, 112);
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    grid-area: section;
+    background-color: black;
+}
+
+main{
+    grid-area: oi;
+    background-color: brown;
+}
+
+aside{
+    grid-area: aside;
+    background-color: red;
+}
+
+footer{
+    grid-area: footer;
+    background-color: blue;
+}
